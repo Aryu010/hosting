@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/css_indice.css"><!--Link CSS-->
+    <link rel="shortcut icon" href=""><!--Favicon utilizado para darle una imagen a la pestaña del navegador-->
+    <meta name="description" content="Encuentra la mejor selección de hardware en nuestra tienda online. Ofrecemos una amplia variedad de productos de alta calidad a precios competitivos. ¡Visítanos hoy mismo!">
+    <meta name="description" content="Tienda online especializada en venta de hardware. Encuentra los mejores productos y precios en nuestra amplia selección de componentes de computadoras.">
+    <meta name="keywords" content="hardware, componentes de ordenador, tarjetas gráficas, procesadores, memoria RAM, almacenamiento">
+    <meta name="author" content="CP Componentes">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+</head>
+<body>
+    <!--COMIENZO COOKIES-->
+
+    <script>
+        /* ésto comprueba la localStorage si ya tiene la variable guardada */
+        function compruebaAceptaCookies() {
+          if(localStorage.aceptaCookies != 'true'){
+            cajacookies.style.display = 'block';
+          }
+        }
+        
+        /* aquí guardamos la variable de que se ha
+        aceptado el uso de cookies así no mostraremos
+        el mensaje de nuevo */
+        function aceptarCookies() {
+          localStorage.aceptaCookies = 'true';
+          cajacookies.style.display = 'none';
+        }
+        
+        /* esto se ejecuta cuando la web está cargada */
+        $(document).ready(function () {
+          compruebaAceptaCookies();
+        });
+
+        
+    </script>
+    <div id="cajacookies">
+        <p><button onclick="aceptarCookies()" class="pull-right"><i class="fa fa-times"></i> Aceptar y cerrar éste mensaje</button>
+        Éste sitio web usa cookies, si permanece aquí acepta su uso.
+        Puede leer más sobre el uso de cookies en nuestra <a href="#">política de privacidad</a>.
+        </p>
+    </div>
+
+    <!--FIN COOKIES-->
+    <div class="topnav">
+        <a class="active" href="Index2.html">Inicio</a>
+        <a href="novedades.html">Novedades</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="nosotros.html">Nosotros</a>
+    </div>
+    <div class="icono">
+        <div id="parent">CP Componentes<div id="border"></div></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <div id="imgcentral">
+        <p id="Pimgcentral">Novedades</p>
+        <a href="novedades.html">
+          <img src="../IMAGES/logo_grafica.png" width="1000px">
+        </a>
+    </div>      
+    <br>
+    <div id="parent2">Para Vosotros Gamers<div id="border2"></div></div>
+    <br>
+    <div class="div1">
+        <div class="row">
+            <div class="column">
+            <h2 id="h2MejorMSI">Lo mejor de MSI</h2>
+            <div class="efectoimagenes">
+                <a href="MejorMsi.html">
+                    <img src="../IMAGES/ofertas1.jpg">
+                </a>
+            </div>
+            </div>
+            <div class="column">
+            <h2 id="h2MejorGiga">Lo mejor de Gigabyte</h2>
+            <div class="efectoimagenes">
+                <a href="MejorGigabyte.html">
+                    <img src="../IMAGES/ofertas2.jpg">
+                </a>
+            </div>
+            </div>
+            <div class="column">
+            <h2 id="h2MejorRazer">Lo mejor de RAZER</h2>
+            <div class="efectoimagenes">
+                <a href="MejorRazer.html">
+                    <img src="../IMAGES/ofertas3.jpg" >
+                </a>
+            </div>
+            </div>
+        </div>
+    </div> 
+
+    <br>
+    <br>
+    <footer>
+        <div class="div4">
+            <h4> CP COMPONENTES </h4>
+            <p> Copyright © 2022 CP COMPONENTES, Inc </p>
+            <br>
+            <a id="aAvisLegal" href="../HTML/Aviso Legal.html"> <u>Información Legal</u></a> &nbsp;&nbsp; <a href="../HTML/Politica de privacidad.html"><u>Politica de Privacidad</u></a> 
+        </div>
+    </footer>
+    
+</body>
+</html>
